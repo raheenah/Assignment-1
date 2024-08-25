@@ -28,7 +28,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   background-color: var(--bacground);
   font-family: "DM Serif Text";
   width: 80dvw;
