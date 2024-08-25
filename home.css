@@ -26,12 +26,16 @@
   font-weight: 400;
   font-style: italic;
 }
-
+main {
+    width: 80dvw;
+    margin: 0 auto;
+background-color: var(--bacground);}
 body {
   margin: 0 auto;
-  background-color: var(--bacground);
+  /* background-color: var(--bacground); */
   font-family: "DM Serif Text";
-  width: 80dvw;
+ background-color: pink;
+  /* width: 80dvw; */
 }
 nav {
   color: var(--black);
