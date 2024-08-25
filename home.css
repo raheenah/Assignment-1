@@ -183,7 +183,7 @@ nav ul li:nth-child(2):hover {
   font-weight: 200;
 }
 .line {
-  width: 100%;
+  width: 100dvh;
   height: 4px;
   background-color: var(--line);
 }
@@ -219,6 +219,15 @@ nav ul li:nth-child(2):hover {
   text-align: center;
   padding-inline-start: 70px;
   color: var(--light_text);
+  align-self: flex-start;
+}
+.family {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 40px;
+  background-color: var(--background2);
 }
 .family_grid {
   /* display: flex; */
@@ -365,5 +374,3 @@ footer {
   border-radius: 25px;
   /* font-family: cursive; */
 }
-
-
