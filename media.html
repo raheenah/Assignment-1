@@ -3,78 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Table</title>
+    <link rel="stylesheet" href="media.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="/Assets/Title.jpg" type="image/icon type" />
+
+    <title>Media</title>
   </head>
   <body>
-   <table>
-  <caption>ALTSCHOOL COURSES</caption>
-  <thead>
-    <tr>
-      <th  scope="col" id="school">SCHOOL</th>
-      <th  scope="col" id="courses">COURSES</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row" rowspan="4" id="SOE">School Of Engineering</th>
-      
-      <td headers="SOE courses">Frontend Engineering</td>
-    </tr>
-    <tr>
-      <td headers="SOE courses">Backend Engineering</td>
-    </tr>
-    <tr>
-      <td headers="SOE courses">Cloud Engineering</td>
-    </tr>
-    <tr>
-      <td headers="SOE courses">Cybersecurity</td>
-    </tr>
-    <tr>
-      <th scope="row" rowspan="3" id="SOP">School Of Product</th>
-      <td headers="SOP courses">Product Design</td>
-    </tr>
-    <tr>
-      <td headers="SOP courses">Product Management</td>
-    </tr>
-    <tr>
-      <td headers="SOP courses">Product Marketing</td>
-    </tr>
-
-    <tr>
-      <th scope="row" rowspan="3" id="SOD">School Of Data</th>
-      <td headers="SOD courses">Data Analysis</td>
-    </tr>
-    <tr>
-      <td headers="SOD courses">Data Science</td>
-    </tr>
-    <tr>
-      <td headers="SOD courses">Data Engineering</td>
-    </tr>
-
-    <tr>
-      <th scope="row" rowspan="2" id="SOB">School Of Business</th>
-      <td headers="SOB courses">High-Impact Selling: From Prospecting to Closing</td>
-    </tr>
-    <tr>
-      <td headers="SOB courses">Digital Marketing</td>
-    </tr>
-    
-    <tr>
-      <th scope="row" rowspan="2" id="SOCE">School Of Creative Economy</th>
-      <td headers="SOP courses">Navigating the Music Business in Africa: Afrobeats Case Study</td>
-    </tr>
-    <tr>
-      <td headers="SOP courses">Content Mastery for African Creators</td>
-    </tr>
-  </tbody>
-</table>
-
-<picture>
-        <source media="(min-width: 1024px)" srcset="assets/5813d0d2-b002-4de2-a28a-d5a355565c90.jpg">
-        <source media="(min-width: 768px)" srcset="assets/4ef89cf4-1013-4275-9d35-687a8dcf43e2.jpg">
-        <img src="assets/download.jpg" alt="A picture of me">
-    </picture>
-
-   
+    <main>
+      <nav>
+        <ul>
+          <li><a href="./form.html" target="_blank">Join the Team!</a></li>
+          <li><a href="./index.html">Raheenat 101</a></li>
+          <li><a href="./table.html">Table</a></li>
+        </ul>
+      </nav>
+      <section class="content">
+        <div class="element">
+          <h1>
+            Enjoy a few pictures from my baking era
+            <p class="note">
+              ...PS: Change your screen size to see my collection
+            </p>
+          </h1>
+          <picture class="media">
+            <source
+              srcset="Assets/cakesforeid.jpg"
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="Assets/cookies.jpg"
+              media="(min-width: 768px) and (max-width: 1023px)"
+            />
+            <source srcset="Assets/cupcakes.jpg" media="(max-width: 767px)" />
+            <img
+              src="Assets/peachcake.jpg"
+              alt="An image of a butter cream cake baked and decorated by me"
+            />
+          </picture>
+          <p class="description">An assortment of baked goods, enjoy!</p>
+        </div>
+        <div class="element">
+          <h1>The bread baking era desrves a spot of its own</h1>
+          <img
+            class="media"
+            src="Assets/bread.jpg"
+            alt="An image of bread rolls baked by me"
+          />
+          <p class="description">The perfect dinner rolls</p>
+        </div>
+        <div class="element">
+          <h1>
+            This section is dedicated to my girls, Aespa
+            <p class="note">Enjoy their perfermonce of Armageddon</p>
+          </h1>
+          <video src="Assets/aespa2.mp4" controls></video>
+          <p class="description">
+            Winter, Karina, Giselle and Ningning promoting their latest album,
+            Armageddon
+          </p>
+        </div>
+        <div class="element">
+          <h1>It's a surprise...</h1>
+          <audio src="Assets/supernova.mp3" controls></audio>
+        </div>
+        <div class="element">
+          <h1>We have a very honorable mention, Newjeans</h1>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ArmDp-zijuc?si=HSgw4AKfCmZZqVxC"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <p class="description">Supershy Music video</p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

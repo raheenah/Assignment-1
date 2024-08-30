@@ -4,69 +4,98 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table</title>
+    <link rel="stylesheet" href="table.css" />
+    <link rel="icon" href="/Assets/Title.jpg" type="image/icon type" />
   </head>
   <body>
-   <table border="10">
-  <caption><b>ALTSCHOOL COURSES</b></caption>
-  <thead>
-    <tr>
-      <th  scope="col" id="school">SCHOOL</th>
-      <th  scope="col" id="courses" >COURSES</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row" rowspan="4" id="SOE">School Of Engineering</th>
-      
-      <td headers="SOE courses">Frontend Engineering</td>
-    </tr>
-    <tr>
-      <td headers="SOE courses">Backend Engineering</td>
-    </tr>
-    <tr>
-      <td headers="SOE courses">Cloud Engineering</td>
-    </tr>
-    <tr>
-      <td headers="SOE courses">Cybersecurity</td>
-    </tr>
-    <tr>
-      <th scope="row" rowspan="3" id="SOP">School Of Product</th>
-      <td headers="SOP courses">Product Design</td>
-    </tr>
-    <tr>
-      <td headers="SOP courses">Product Management</td>
-    </tr>
-    <tr>
-      <td headers="SOP courses">Product Marketing</td>
-    </tr>
-
-    <tr>
-      <th scope="row" rowspan="3" id="SOD">School Of Data</th>
-      <td headers="SOD courses">Data Analysis</td>
-    </tr>
-    <tr>
-      <td headers="SOD courses">Data Science</td>
-    </tr>
-    <tr>
-      <td headers="SOD courses">Data Engineering</td>
-    </tr>
-
-    <tr>
-      <th scope="row" rowspan="2" id="SOB">School Of Business</th>
-      <td headers="SOB courses">High-Impact Selling: From Prospecting to Closing</td>
-    </tr>
-    <tr>
-      <td headers="SOB courses">Digital Marketing</td>
-    </tr>
-    
-    <tr>
-      <th scope="row" rowspan="2" id="SOCE">School Of Creative Economy</th>
-      <td headers="SOP courses">Navigating the Music Business in Africa: Afrobeats Case Study</td>
-    </tr>
-    <tr>
-      <td headers="SOP courses">Content Mastery for African Creators</td>
-    </tr>
-  </tbody>
-</table>
+    <main>
+      <nav>
+        <ul>
+          <li><a href="./form.html" target="_blank">Join the Team!</a></li>
+          <li><a href="./index.html">Raheenat 101</a></li>
+          <li><a href="./table.html">Table</a></li>
+        </ul>
+      </nav>
+      <section class="table_section">
+        <h1 class="table_title">Courses by School</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>School</th>
+              <th>Courses</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="4" class="school_cell">School of Engineering</td>
+              <td>Frontend Engineering</td>
+            </tr>
+            <tr>
+              <td>Backend Engineering</td>
+            </tr>
+            <tr>
+              <td>Cloud Engineering</td>
+            </tr>
+            <tr>
+              <td>Cybersecurity</td>
+            </tr>
+            <tr>
+              <td rowspan="3" class="school_cell">School of Data</td>
+              <td>Data Analysis</td>
+            </tr>
+            <tr>
+              <td>Data Science</td>
+            </tr>
+            <tr>
+              <td>Data Engineering</td>
+            </tr>
+            <tr>
+              <td rowspan="3" class="school_cell">School of Product</td>
+              <td>Product Design</td>
+            </tr>
+            <tr>
+              <td>Product Management</td>
+            </tr>
+            <tr>
+              <td>Product Marketing</td>
+            </tr>
+            <tr>
+              <td rowspan="2" class="school_cell">School of Business</td>
+              <td>High-Impact Selling: From Prospecting to Closing</td>
+            </tr>
+            <tr>
+              <td>Digital Marketing</td>
+            </tr>
+            <tr>
+              <td rowspan="2" class="school_cell">
+                School of Creative Economy
+              </td>
+              <td>
+                Navigating the Music Business in Africa: Afrobeats Case Study
+              </td>
+            </tr>
+            <tr>
+              <td>Content Mastery for African Creators</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <footer>
+        <p class="closing_tag">Thank you for visiting</p>
+        <div class="footer_line"></div>
+        <div class="bottom">
+          <div class="channel_container">
+            <div class="channel">
+              <img src="social-icon1.png" alt="Social Icon 1" />
+              <p>Social Media 1</p>
+            </div>
+            <div class="channel">
+              <img src="social-icon2.png" alt="Social Icon 2" />
+              <p>Social Media 2</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>

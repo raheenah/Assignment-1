@@ -1,0 +1,137 @@
+:root {
+  --light_text: #c78eb2;
+  --line: #d46bad;
+  --background3: #5c374e;
+  --dark_text: #16051d;
+  --bacground: #3d2835;
+  --background2: #4f2f43;
+  --back_to_top: #4c1b39;
+  --light: #c07ca6;
+  --medium: #7a3961;
+  --shadow: #240116;
+  --button: #965f81;
+  --cardback: #eeabd4;
+  --button_hover: #c07ca6;
+  --black: #000000;
+  --answer: #a3688c;
+}
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+main {
+  max-width: 85dvw;
+  margin: 0 auto;
+  background-color: var(--bacground);
+}
+body {
+  margin: 0 auto;
+  /* background-color: var(--bacground); */
+  font-family: "DM Serif Text";
+  background-color: pink;
+  /* width: 80dvw; */
+}
+nav {
+  color: var(--black);
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-block: 8px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: var(--light_text);
+  margin-inline-start: 3px;
+}
+nav ul li:first-child {
+  margin-inline-end: auto;
+  background-color: var(--button);
+  padding-block: 30px;
+  font-size: 1.2rem;
+  color: var(--dark_text) !important;
+  font-weight: bolder;
+  padding-inline: 25px;
+  border-radius: 50px;
+}
+nav ul li:first-child a {
+  color: inherit; /* Ensure the link inherits the color from its parent */
+}
+nav ul li:first-child:hover {
+  background-color: var(--button_hover);
+  box-shadow: 0px 1px 10px var(--shadow);
+}
+
+nav ul li {
+  margin-inline-start: 40px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+nav ul li:nth-child(3) {
+  margin-inline-end: 20px;
+}
+nav ul li:nth-child(3):hover,
+nav ul li:nth-child(2):hover {
+  font-size: 1.2rem;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin: 0 auto;
+}
+.element{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin: 0 auto;
+}
+.element h1{
+    font-size: 2rem;
+    color: var(--light_text);
+    font-weight: 600;
+    justify-self: center;
+    display: inline;
+    text-align: center;
+}
+.note{
+    /* display: inline; */
+    font-size: 0.7rem;
+    color: var(--button);
+}
+.description{
+    font-size: 1.2rem;
+    color: var(--button);
+    font-weight: 400;
+    text-align: center;
+    margin-block-start: -10px;
+}
+.element video{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    justify-self: unset;
+}
