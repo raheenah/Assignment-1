@@ -79,7 +79,7 @@ nav ul li:first-child {
   border-radius: 50px;
 }
 nav ul li:first-child a {
-  color: inherit; /* Ensure the link inherits the color from its parent */
+  color: inherit; 
 }
 nav ul li:first-child:hover {
   background-color: var(--button_hover);
@@ -132,7 +132,7 @@ nav ul li:nth-child(2):hover {
     /* Medium pink */ #d24d77,
     /* Bright dark pink */ #b03a6b,
     /* Darker pink */ #7d3f8c,
-    /* Dark purple */ #4a235a /* Very dark purple */
+    /* Dark purple */ #4a235a
   );
   background-size: 800% 800%;
   animation: gradientAnimation 10s ease infinite;
@@ -401,7 +401,7 @@ footer {
   overflow-x: hidden;  
   box-sizing: border-box;  
 }
-/* Navbar Styles for Small Screens */
+
 @media screen and (max-width: 420px) {
 
 
@@ -467,7 +467,7 @@ footer {
     /* Medium pink */ #d24d77,
     /* Bright dark pink */ #b03a6b,
     /* Darker pink */ #7d3f8c,
-    /* Dark purple */ #4a235a /* Very dark purple */
+    /* Dark purple */ #4a235a 
   );
   background-size: 800% 800%;
   animation: gradientAnimation 10s ease infinite;

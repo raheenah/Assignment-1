@@ -78,7 +78,7 @@ nav ul li:first-child {
   border-radius: 50px;
 }
 nav ul li:first-child a {
-  color: inherit; /* Ensure the link inherits the color from its parent */
+  color: inherit; 
 }
 nav ul li:first-child:hover {
   background-color: var(--button_hover);
@@ -134,4 +134,62 @@ nav ul li:nth-child(2):hover {
     height: auto;
     border-radius: 10px;
     justify-self: unset;
+}
+footer {
+  background-color: var(--background3);
+  padding-block-start: 50px;
+  display: flex;
+  justify-content: center;
+}
+.closing_tag {
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+  padding-block: 20px;
+  /* margin-inline-start: 90px; */
+}
+.footer_line {
+  width: 100%;
+  background-color: var(--line);
+  height: 3px;
+}
+.footer_con {
+  width: 80%;
+}
+.bottom {
+  display: flex;
+  padding-block: 50px;
+}
+.channel_container {
+  display: flex;
+  flex-direction: row;
+  margin-block-start: -15px;
+  gap: 25px;
+  /* padding-block-start: 20px; */
+}
+.contact_head {
+  font-size: 0.8rem;
+  color: var(--light_text);
+  font-weight: 600;
+  padding-block-start: 20px;
+  text-decoration: underline;
+}
+.channel {
+  display: flex;
+  /* margin-block-start: -15px; */
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  gap: 10px;
+  /* padding-block: 20px; */
+}
+.channel img {
+  width: 15px;
+  height: 15px;
+  align-self: center;
+}
+.channel p {
+  font-size: 0.8rem;
+  color: var(--light_text);
+  font-weight: 200;
 }

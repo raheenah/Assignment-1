@@ -245,14 +245,135 @@ form {
   background-color: var(--input);
   /* border-radius: 40px; */
 }
-.box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 50px;
-  background-color: var(--input);
-  border-radius: 5px;
-  
+
+@media (max-width: 480px) {
+  nav {
+    padding: 0.5em;
+  }
+
+  .right {
+    margin-bottom: 0.5em;
+    /* max-height: 100dvh; */
+  }
+  .left {
+    display: none;
+  }
+
+  .icon {
+    width: 100px;
+  }
+
+  .contact img {
+    width: 30px;
+  }
+  .form_grid {
+    display: flex;
+    flex-direction: column;
+    column-gap: 40px;
+    row-gap: 10px;
+    /* background-color: var(--back_to_top); */
+  }
+  .actual_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 86%; */
+  }
+  .actual_form p {
+    font-size: 1.1rem;
+    font-family: "Roboto", sans-serif;
+    color: var(--grey_text);
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+    line-height: 1.8;
+  }
+  .actual_form a {
+    text-decoration: none;
+    color: var(--blue_text);
+  }
+  form {
+    margin-top: 30px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    /* background-color: #0367F2; */
+    /* padding-left: 60px; */
+    /* padding-right: 60px; */
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 481px) {
+    nav {
+    padding: 0.5em;
+  }
+
+  .right {
+    margin-bottom: 0.5em;
+    /* max-height: 100dvh; */
+  }
+  .left {
+    display: none;
+  }
+
+  .icon {
+    width: 100px;
+  }
+
+  .contact img {
+    width: 30px;
+  }
+  .form_grid {
+    display: grid;
+grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 10px;
+    /* background-color: var(--back_to_top); */
+  }
+  .actual_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    justify-self: center;
+  }
+  form{
+    justify-self: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .actual_form p {
+    font-size: 1.1rem;
+    font-family: "Roboto", sans-serif;
+    color: var(--grey_text);
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+    line-height: 1.8;
+  }
+  .actual_form a {
+    text-decoration: none;
+    color: var(--blue_text);
+  }
+  form {
+    margin-top: 30px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    /* background-color: #0367F2; */
+    /* padding-left: 60px; */
+    /* padding-right: 60px; */
+  }
 }
